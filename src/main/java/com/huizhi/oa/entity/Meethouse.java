@@ -1,12 +1,27 @@
 package com.huizhi.oa.entity;
 
+/**
+ * 会议室信息表
+ */
 public class Meethouse {
+    /**
+     *会议室编号
+     */
     private Integer mhId;
 
+    /**
+     *会议室名称
+     */
     private String mhName;
 
+    /**
+     *会议室地址
+     */
     private String mhAddress;
 
+    /**
+     *状态0-已占用、1-空闲
+     */
     private Integer mhState;
 
     public Integer getMhId() {

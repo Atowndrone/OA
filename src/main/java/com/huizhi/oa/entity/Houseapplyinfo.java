@@ -2,23 +2,53 @@ package com.huizhi.oa.entity;
 
 import java.util.Date;
 
+/**
+ *会议申请表
+ */
 public class Houseapplyinfo {
+    /**
+     *会议室申请编号
+     */
     private Integer haId;
 
+    /**
+     *员工编号（申请人员）
+     */
     private Integer userid;
 
+    /**
+     *申请日期
+     */
     private Date haStarttime;
 
+    /**
+     *申请原因（用途）
+     */
     private String haReason;
 
+    /**
+     *审核人员
+     */
     private Integer haUserid;
 
+    /**
+     *会议室编号
+     */
     private Integer haMhId;
 
+    /**
+     *状态0-未审核、1-审核通过、2-审核未通过
+     */
     private Integer haState;
 
+    /**
+     *审核建议
+     */
     private String haCheckad;
 
+    /**
+     *会议记录编号
+     */
     private Integer haMId;
 
     public Integer getHaId() {

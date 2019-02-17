@@ -51,11 +51,11 @@ public class DruidConfig {
     //2、配置一个web监控的filter
     @Bean
     public FilterRegistrationBean webStatFilter(){
-        FilterRegistrationBean bean = new FilterRegistrationBean();
-        bean.setFilter(new WebStatFilter());
+            FilterRegistrationBean bean = new FilterRegistrationBean();
+            bean.setFilter(new WebStatFilter());
 
-        Map<String,String> initParams = new HashMap<>();
-        initParams.put("exclusions","*.js,*.css,/druid/*");
+            Map<String,String> initParams = new HashMap<>();
+            initParams.put("exclusions","*.js,*.css,/druid/*");
 
         bean.setInitParameters(initParams);
 

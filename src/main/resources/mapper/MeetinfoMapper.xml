@@ -125,4 +125,7 @@
       m_overtime = #{mOvertime,jdbcType=TIMESTAMP}
     where m_id = #{mId,jdbcType=INTEGER}
   </update>
+<select id="getAllMeetinfo" resultType="com.huizhi.oa.entity.Meetinfo">
+  select  * from meetinfo
+</select>
 </mapper>

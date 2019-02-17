@@ -2,21 +2,48 @@ package com.huizhi.oa.entity;
 
 import java.util.Date;
 
+/**
+ * 会议记录表
+ */
 public class Meetinfo {
+    /**
+     *会议编号
+     */
     private Integer mId;
 
+    /**
+     *会议标题
+     */
     private String mTitle;
 
+    /**
+     *会议内容
+     */
     private String mContent;
 
+    /**
+     *会议室编号
+     */
     private Integer mhId;
 
+    /**
+     *会议人员
+     */
     private String mPeople;
 
+    /**
+     *开会时间
+     */
     private Date mStarttime;
 
+    /**
+     *会议状态0-已开、1-未开
+     */
     private Integer mState;
 
+    /**
+     *开会结束时间
+     */
     private Date mOvertime;
 
     public Integer getmId() {
